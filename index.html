@@ -1,99 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101522">
-<title>HORIZONT FASHION | Soluções Académicas e Protótipos</title>
-<style>
-:root{--navy:#101522;--navy2:#182238;--gold:#d6ad55;--gold2:#f0d38b;--blue:#244d7d;--ink:#202635;--muted:#697386;--paper:#f5f6f8;--white:#fff;--line:#e5e8ee;--green:#198754}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}button,input,select,textarea{font:inherit}button,a{cursor:pointer}.topbar{background:var(--navy);color:#fff;padding:10px 5%;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}.topbar a{color:var(--gold2);text-decoration:none}.header{background:linear-gradient(120deg,#101522,#1d2c49);color:#fff;padding:18px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:3px solid var(--gold)}.brand{display:flex;align-items:center;gap:13px}.logo{width:58px;height:58px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-weight:900;font-size:23px;letter-spacing:-2px}.brand h1{font-size:22px;letter-spacing:2px;margin:0}.brand p{margin:5px 0 0;color:#d9deea;font-size:12px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav button{background:transparent;border:1px solid #526078;color:white;padding:9px 13px;border-radius:7px}.nav button:hover,.nav button.active{background:var(--gold);color:#171b25;border-color:var(--gold)}main{max-width:1150px;margin:auto;padding:28px 18px 55px}.hero{background:linear-gradient(120deg,rgba(16,21,34,.96),rgba(36,77,125,.88)),radial-gradient(circle at 90% 10%,#d6ad55,transparent 30%);color:white;padding:42px;border-radius:16px;display:grid;grid-template-columns:1.5fr 1fr;gap:25px;align-items:center;box-shadow:0 12px 35px #18223820}.eyebrow{color:var(--gold2);font-weight:bold;letter-spacing:2px;font-size:12px}.hero h2{font-size:clamp(28px,4vw,43px);line-height:1.12;margin:12px 0}.hero p{line-height:1.7;color:#e2e7ef;max-width:650px}.hero-card{border:1px solid #ffffff45;background:#ffffff12;padding:22px;border-radius:13px}.hero-card strong{display:block;color:var(--gold2);font-size:27px;margin-bottom:8px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{border:0;border-radius:8px;padding:12px 17px;font-weight:bold;background:var(--gold);color:#171b25}.btn.secondary{background:transparent;color:white;border:1px solid #ffffff80}.btn.blue{background:var(--blue);color:white}.btn.light{background:#edf0f5;color:var(--ink)}.btn.danger{background:#b83242;color:white}.section{margin-top:34px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:16px}.section h2{margin:0;color:var(--navy);font-size:25px}.section-head p{margin:6px 0 0;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 5px 18px #1b29400a}.card h3{margin:0 0 9px;color:var(--navy)}.card p{color:var(--muted);line-height:1.55;font-size:14px}.price{font-weight:800;color:var(--blue);font-size:20px;margin:13px 0}.tag{display:inline-block;background:#f7efd9;color:#775719;padding:5px 9px;border-radius:20px;font-size:11px;font-weight:bold}.panel{background:white;border:1px solid var(--line);border-radius:13px;padding:23px;box-shadow:0 6px 22px #1b29400a}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:bold;color:#354056}.field input,.field select,.field textarea{border:1px solid #d9dee7;border-radius:8px;padding:12px;background:#fff;min-width:0}.field textarea{min-height:105px;resize:vertical}.hint{font-size:12px;color:var(--muted);line-height:1.5}.hidden{display:none!important}.view{display:none}.view.active{display:block}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{background:white;border:1px solid var(--line);padding:17px;border-radius:10px}.stat span{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:27px;color:var(--navy);margin-top:8px}.table-wrap{overflow:auto;background:white;border:1px solid var(--line);border-radius:10px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:12px;border-bottom:1px solid var(--line);font-size:13px}th{background:#f0f2f6;color:#3d4658}td .btn{padding:7px 9px;font-size:12px}.status{padding:5px 8px;border-radius:20px;background:#fff2d6;color:#805b0a;font-size:11px;font-weight:bold}.notice{padding:13px 15px;background:#fff8e8;border:1px solid #f0dfb5;border-radius:9px;color:#6d531d;font-size:13px;line-height:1.5;margin:14px 0}.success{background:#eaf7ef;border-color:#c6e7d1;color:#17633a}.footer{background:var(--navy);color:#dce2ec;padding:30px 5%;text-align:center;line-height:1.8}.footer strong{color:var(--gold2)}.footer a{color:var(--gold2);text-decoration:none}.muted{color:var(--muted)}.empty{text-align:center;padding:25px;color:var(--muted)}@media(max-width:800px){.hero{grid-template-columns:1fr;padding:27px}.grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}}@media(max-width:540px){.grid,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.header{align-items:flex-start}.nav{width:100%}.nav button{flex:1}.brand h1{font-size:18px}.stats{grid-template-columns:1fr 1fr}.hero h2{font-size:30px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HORIZONT FASHION — Plataforma de atendimento e gestão de solicitações de serviços.">
+  <title>HORIZONT FASHION | Área do Cliente</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topbar"><span>📍 Soyo – Zaire, Angola</span><span>☎ <a href="tel:+244921242182">+244 921 242 182</a> · <a href="tel:+244925622260">+244 925 622 260</a></span></div>
-<header class="header">
- <div class="brand"><div class="logo">HF</div><div><h1>HORIZONT FASHION</h1><p>Soluções Académicas e Protótipos Funcionais</p></div></div>
- <nav class="nav"><button class="active" data-view="inicio">Início</button><button data-view="servicos">Serviços</button><button data-view="cadastro">Criar conta</button><button data-view="login">Entrar</button><button data-view="admin">Administração</button></nav>
-</header>
-<main>
-<section id="inicio" class="view active">
- <div class="hero"><div><div class="eyebrow">BEM-VINDO À HORIZONT FASHION</div><h2>Transformamos ideias em projectos e soluções funcionais.</h2><p>Conheça os nossos serviços académicos, preparação para defesa, desenvolvimento de protótipos e soluções gráficas. Crie a sua conta e envie uma solicitação de forma simples.</p><div class="actions"><button class="btn" onclick="showView('cadastro')">Criar conta</button><button class="btn secondary" onclick="showView('servicos')">Explorar serviços</button></div></div><div class="hero-card"><strong>O seu projecto começa aqui.</strong><p>Registe-se, escolha o serviço pretendido e acompanhe o estado da sua solicitação.</p><span class="tag">Atendimento organizado</span></div></div>
- <div class="section"><div class="section-head"><div><h2>Como funciona?</h2><p>Um processo simples para solicitar os nossos serviços.</p></div></div><div class="grid"><article class="card"><h3>01. Crie a sua conta</h3><p>Preencha os seus dados para criar o seu perfil de cliente.</p></article><article class="card"><h3>02. Faça o pedido</h3><p>Escolha um serviço, indique os detalhes e envie a solicitação.</p></article><article class="card"><h3>03. Acompanhe</h3><p>Consulte o estado do pedido na sua área de cliente.</p></article></div></div>
-</section>
-<section id="servicos" class="view">
- <div class="section-head"><div><h2>Serviços e preços</h2><p>Escolha a solução adequada à sua necessidade.</p></div></div>
- <div class="grid" id="serviceCards"></div>
- <div class="notice">Os valores apresentados são indicativos e podem depender da complexidade, dos materiais e dos requisitos do projecto. Confirme as condições com a administração antes de efectuar qualquer pagamento.</div>
-</section>
-<section id="cadastro" class="view">
- <div class="section-head"><div><h2>Cadastro de cliente</h2><p>Crie a sua conta para poder enviar solicitações.</p></div></div>
- <form class="panel form-grid" id="registerForm">
-  <div class="field"><label>Nome completo *</label><input name="name" required maxlength="100"></div>
-  <div class="field"><label>Telefone *</label><input name="phone" required placeholder="+244..." maxlength="25"></div>
-  <div class="field"><label>E-mail *</label><input name="email" type="email" required></div>
-  <div class="field"><label>Palavra-passe *</label><input name="password" type="password" required minlength="4"></div>
-  <div class="field full"><label>Endereço (opcional)</label><input name="address"></div>
-  <div class="field full"><button class="btn" type="submit">Criar conta</button><span class="hint">Protótipo: os dados ficam guardados apenas neste navegador e dispositivo.</span></div>
- </form>
-</section>
-<section id="login" class="view">
- <div class="section-head"><div><h2>Entrar na área do cliente</h2><p>Aceda com o e-mail e a palavra-passe registados neste navegador.</p></div></div>
- <form class="panel form-grid" id="loginForm"><div class="field full"><label>E-mail</label><input name="email" type="email" required></div><div class="field full"><label>Palavra-passe</label><input name="password" type="password" required></div><div class="field full"><button class="btn blue">Entrar</button></div></form>
-</section>
-<section id="cliente" class="view">
- <div class="section-head"><div><h2>Minha área</h2><p id="welcome"></p></div><button class="btn light" onclick="logout()">Terminar sessão</button></div>
- <div class="panel"><h3>Nova solicitação</h3><form id="requestForm" class="form-grid">
-  <div class="field"><label>Serviço *</label><select name="service" id="requestService" required></select></div>
-  <div class="field"><label>Pacote (quando aplicável)</label><select name="package"><option>Não se aplica</option><option>Básico</option><option>Intermédio</option><option>Completo</option><option>Premium</option></select></div>
-  <div class="field"><label>Prazo pretendido</label><input name="deadline" type="date"></div>
-  <div class="field"><label>Orçamento/valor indicado (Kz)</label><input name="amount" type="number" min="0" placeholder="A confirmar"></div>
-  <div class="field full"><label>Descreva o que pretende *</label><textarea name="description" required></textarea></div>
-  <div class="field full"><button class="btn">Enviar solicitação</button><span class="hint">Não envie palavras-passe, dados bancários ou documentos sensíveis nesta demonstração.</span></div>
- </form></div>
- <div class="section"><h2>As minhas solicitações</h2><div id="clientRequests" class="panel empty">Ainda não existem solicitações.</div></div>
-</section>
-<section id="admin" class="view">
- <div class="section-head"><div><h2>Painel administrativo demonstrativo</h2><p>Visão local dos clientes e pedidos registados neste navegador.</p></div><button class="btn light" onclick="renderAdmin()">Actualizar</button></div>
- <div class="notice">Acesso de demonstração, sem autenticação administrativa real. Os dados não são partilhados entre dispositivos nem enviados automaticamente para os administradores.</div>
- <div class="stats"><div class="stat"><span>Clientes</span><strong id="statClients">0</strong></div><div class="stat"><span>Solicitações</span><strong id="statRequests">0</strong></div><div class="stat"><span>Pendentes</span><strong id="statPending">0</strong></div><div class="stat"><span>Concluídas</span><strong id="statDone">0</strong></div></div>
- <div class="section"><h2>Solicitações recebidas</h2><div class="table-wrap"><table><thead><tr><th>Código/data</th><th>Cliente</th><th>Contacto</th><th>Serviço</th><th>Estado</th><th>Acção</th></tr></thead><tbody id="adminRows"></tbody></table></div></div>
- <div class="section"><h2>Clientes cadastrados</h2><div class="table-wrap"><table><thead><tr><th>Nome</th><th>E-mail</th><th>Telefone</th><th>Cadastro</th></tr></thead><tbody id="clientRows"></tbody></table></div></div>
-</section>
-</main>
-<footer class="footer"><strong>HORIZONT FASHION</strong><br>Soluções Académicas e Protótipos Funcionais<br>Contactos: +244 921 242 182 · +244 925 622 260<br><br>Desenvolvido por <strong>Peter John Sundays</strong><br><a href="mailto:peterjohnsundays99@gmail.com">peterjohnsundays99@gmail.com</a><br>+244 936 280 454 · +244 938 427 397 · +244 952 883 691</footer>
-<script>
-const ADMIN_WA=['244921242182','244925622260'];
-const services=[
- {name:'Tema',price:'15.000 Kz',desc:'Definição e orientação inicial do tema do trabalho.'},
- {name:'Pré-projecto',price:'20.000 Kz',desc:'Organização da proposta e estrutura inicial do projecto.'},
- {name:'Projecto escrito final',price:'40.000 Kz',desc:'Apoio na estruturação e preparação do documento final.'},
- {name:'PowerPoint para defesa',price:'15.500 Kz',desc:'Preparação de apresentação visual para a defesa.'},
- {name:'Preparação para defesa',price:'10.350 Kz',desc:'Orientação e preparação para apresentação e defesa.'},
- {name:'Pacote Básico',price:'75.000 Kz',desc:'Tema, pré-projecto e projecto escrito final.'},
- {name:'Pacote Intermédio',price:'90.500 Kz',desc:'Pacote básico mais PowerPoint para defesa.'},
- {name:'Pacote Completo',price:'100.850 Kz',desc:'Pacote intermédio mais preparação para defesa.'},
- {name:'Pacote Premium',price:'Sob orçamento',desc:'Pacote completo mais protótipo funcional. Materiais + 45% de mão de obra.'},
- {name:'Protótipo funcional',price:'Sob orçamento',desc:'Planeamento, materiais, montagem, testes e demonstração.'},
- {name:'Serviços gráficos',price:'Sob orçamento',desc:'Logótipos, cartazes, convites e outros materiais gráficos.'}
-];
-const get=(k)=>JSON.parse(localStorage.getItem('hf_'+k)||'[]');
-const put=(k,v)=>localStorage.setItem('hf_'+k,JSON.stringify(v));
-let current=JSON.parse(sessionStorage.getItem('hf_current')||'null');
-function showView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='cliente')renderClient();if(id==='admin')renderAdmin();window.scrollTo({top:0,behavior:'smooth'});}
-document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
-function drawServices(){document.getElementById('serviceCards').innerHTML=services.map(s=>`<article class="card"><span class="tag">HORIZONT FASHION</span><h3>${s.name}</h3><p>${s.desc}</p><div class="price">${s.price}</div><button class="btn blue" onclick="chooseService('${s.name.replace(/'/g,"\\'")}')">Solicitar serviço</button></article>`).join('');document.getElementById('requestService').innerHTML=services.map(s=>`<option>${s.name}</option>`).join('');}
-function chooseService(name){if(!current){showView('cadastro');alert('Crie uma conta ou entre para solicitar um serviço.');return}showView('cliente');document.getElementById('requestService').value=name;}
-document.getElementById('registerForm').addEventListener('submit',e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));let users=get('users');if(users.some(u=>u.email.toLowerCase()===d.email.toLowerCase()))return alert('Este e-mail já está cadastrado neste navegador.');d.created=new Date().toLocaleString('pt-PT');users.push(d);put('users',users);alert('Conta criada com sucesso! Já pode iniciar sessão.');e.target.reset();showView('login')});
-document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();const d=Object.fromEntries(new FormData(e.target));const u=get('users').find(x=>x.email.toLowerCase()===d.email.toLowerCase()&&x.password===d.password);if(!u)return alert('Dados incorrectos ou conta não encontrada neste navegador.');current={name:u.name,email:u.email,phone:u.phone};sessionStorage.setItem('hf_current',JSON.stringify(current));e.target.reset();showView('cliente')});
-function logout(){current=null;sessionStorage.removeItem('hf_current');showView('inicio')}
-function renderClient(){if(!current){showView('login');return}document.getElementById('welcome').textContent='Bem-vindo(a), '+current.name+'.';const req=get('requests').filter(r=>r.email===current.email);document.getElementById('clientRequests').innerHTML=req.length?req.map(r=>`<div style="padding:12px 0;border-bottom:1px solid #eee"><b>${r.code} · ${r.service}</b><p class="muted">${r.date} · ${r.status}</p><p>${escapeHtml(r.description)}</p></div>`).join(''):'Ainda não existem solicitações.'}
-document.getElementById('requestForm').addEventListener('submit',e=>{e.preventDefault();if(!current)return showView('login');const d=Object.fromEntries(new FormData(e.target));const r={...d,code:'HF-'+Date.now().toString().slice(-7),name:current.name,email:current.email,phone:current.phone,date:new Date().toLocaleString('pt-PT'),status:'Pendente'};let all=get('requests');all.unshift(r);put('requests',all);e.target.reset();renderClient();alert('Solicitação registada neste navegador. Para notificar os administradores, escolha um dos contactos WhatsApp na próxima etapa.');const msg=`Novo pedido HORIZONT FASHION%0A código: ${r.code}%0ACliente: ${r.name}%0ATelefone: ${r.phone}%0AEmail: ${r.email}%0AServiço: ${r.service}%0APacote: ${r.package}%0AValor indicado: ${r.amount||'A confirmar'} Kz%0ADescrição: ${encodeURIComponent(r.description)}%0AData: ${encodeURIComponent(r.date)}`;const go=confirm('Pretende abrir o WhatsApp para enviar manualmente o resumo do pedido ao administrador?');if(go){const choice=prompt('Digite 1 para +244 921 242 182 ou 2 para +244 925 622 260','1');const n=choice==='2'?ADMIN_WA[1]:ADMIN_WA[0];window.open(`https://wa.me/${n}?text=${msg}`,'_blank') }});
-function renderAdmin(){const users=get('users'),req=get('requests');document.getElementById('statClients').textContent=users.length;document.getElementById('statRequests').textContent=req.length;document.getElementById('statPending').textContent=req.filter(r=>r.status==='Pendente').length;document.getElementById('statDone').textContent=req.filter(r=>r.status==='Concluído').length;document.getElementById('adminRows').innerHTML=req.length?req.map(r=>`<tr><td>${r.code}<br><span class="muted">${r.date}</span></td><td>${escapeHtml(r.name)}</td><td>${escapeHtml(r.phone)}<br>${escapeHtml(r.email)}</td><td>${escapeHtml(r.service)}</td><td><span class="status">${r.status}</span></td><td><select onchange="setStatus('${r.code}',this.value)"><option ${r.status==='Pendente'?'selected':''}>Pendente</option><option ${r.status==='Em análise'?'selected':''}>Em análise</option><option ${r.status==='Em execução'?'selected':''}>Em execução</option><option ${r.status==='Concluído'?'selected':''}>Concluído</option><option ${r.status==='Cancelado'?'selected':''}>Cancelado</option></select></td></tr>`).join(''):'<tr><td colspan="6" class="empty">Sem solicitações neste navegador.</td></tr>';document.getElementById('clientRows').innerHTML=users.length?users.map(u=>`<tr><td>${escapeHtml(u.name)}</td><td>${escapeHtml(u.email)}</td><td>${escapeHtml(u.phone)}</td><td>${u.created}</td></tr>`).join(''):'<tr><td colspan="4" class="empty">Sem clientes cadastrados.</td></tr>'}
-function setStatus(code,status){let r=get('requests');r=r.map(x=>x.code===code?{...x,status}:x);put('requests',r);renderAdmin()}
-function escapeHtml(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-drawServices();
-if(current) { /* sessão de demonstração */ }
-</script>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="inicio">
+        <img src="assets/Horizont.jpg" alt="Logótipo HORIZONT FASHION">
+        <span>HORIZONT <small>FASHION</small></span>
+      </a>
+      <div class="side-label">ÁREA DO CLIENTE</div>
+      <nav class="nav-menu">
+        <button class="nav-link active" data-page="inicio"><span>⌂</span> Início</button>
+        <button class="nav-link" data-page="solicitacoes"><span>▤</span> Minhas solicitações</button>
+        <button class="nav-link" data-page="servicos"><span>✦</span> Serviços</button>
+        <button class="nav-link" data-page="pagamentos"><span>▣</span> Pagamentos</button>
+        <button class="nav-link" data-page="perfil"><span>♙</span> Meu perfil</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><strong>Precisa de ajuda?</strong><p>Entre em contacto com a nossa equipa.</p><a href="mailto:contacto@horizontfashion.ao">Contactar →</a></div>
+        <button class="logout" id="logoutBtn">↪ Terminar sessão</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div><span class="eyebrow">PLATAFORMA DE ATENDIMENTO</span><h1 id="pageTitle">Bem-vindo à HORIZONT FASHION</h1></div>
+        <div class="top-user"><div class="avatar" id="userInitials">CL</div><div><strong id="topUserName">Cliente</strong><small>Área do cliente</small></div></div>
+      </header>
+
+      <section class="page active" id="page-inicio">
+        <div class="hero">
+          <div class="hero-copy"><span class="gold-tag">EXCELÊNCIA • CRIATIVIDADE • INOVAÇÃO</span><h2>As suas ideias,<br><em>o nosso compromisso.</em></h2><p>Solicite serviços, acompanhe o andamento dos seus trabalhos e consulte os seus pagamentos num só lugar.</p><button class="btn btn-gold" data-goto="servicos">Explorar serviços <b>→</b></button></div>
+          <div class="hero-mark"><img src="assets/Horizont.jpg" alt="HORIZONT FASHION"></div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">RESUMO DA CONTA</span><h2>Visão geral</h2></div><span class="today" id="todayLabel"></span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon">▤</span><small>Total de solicitações</small><strong id="statRequests">0</strong><span class="stat-note">Pedidos registados</span></article>
+          <article class="stat-card"><span class="stat-icon">◷</span><small>Em andamento</small><strong id="statActive">0</strong><span class="stat-note">A serem acompanhados</span></article>
+          <article class="stat-card"><span class="stat-icon">✓</span><small>Concluídas</small><strong id="statDone">0</strong><span class="stat-note">Trabalhos finalizados</span></article>
+          <article class="stat-card"><span class="stat-icon">▣</span><small>Pagamentos registados</small><strong id="statPayments">0</strong><span class="stat-note">Comprovativos enviados</span></article>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2>Solicitações recentes</h2></div><button class="text-btn" data-goto="solicitacoes">Ver todas →</button></div>
+        <div class="panel"><div id="recentRequests" class="empty-state">Ainda não existem solicitações. Explore os nossos serviços para começar.</div></div>
+      </section>
+
+      <section class="page" id="page-servicos">
+        <div class="page-intro"><span class="eyebrow">O QUE FAZEMOS</span><h2>Os nossos serviços</h2><p>Escolha o serviço de que precisa e envie a sua solicitação à nossa equipa.</p></div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-symbol">TFC</div><span class="service-kicker">ACOMPANHAMENTO ACADÉMICO</span><h3>Trabalho de Fim de Curso</h3><p>Apoio na organização, estruturação e desenvolvimento do seu projeto académico.</p><button class="btn btn-outline request-service" data-service="Trabalho de Fim de Curso">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">⌘</div><span class="service-kicker">TECNOLOGIA</span><h3>Protótipos funcionais</h3><p>Criação de protótipos de websites, sistemas e aplicações para demonstrar as suas ideias.</p><button class="btn btn-outline request-service" data-service="Criação de protótipo funcional">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">▧</div><span class="service-kicker">PREPARAÇÃO</span><h3>Preparatório para defesa</h3><p>Preparação de apresentações, materiais de apoio e organização para a defesa.</p><button class="btn btn-outline request-service" data-service="Preparatório para defesa">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">✧</div><span class="service-kicker">DESIGN E COMUNICAÇÃO</span><h3>Serviços gráficos</h3><p>Criação de logótipos, cartazes, convites e outros materiais gráficos.</p><button class="btn btn-outline request-service" data-service="Serviços gráficos">Solicitar serviço <b>→</b></button></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-solicitacoes">
+        <div class="page-intro row-intro"><div><span class="eyebrow">OS SEUS PEDIDOS</span><h2>Minhas solicitações</h2><p>Consulte os pedidos que enviou à HORIZONT FASHION.</p></div><button class="btn btn-gold" data-goto="servicos">+ Nova solicitação</button></div>
+        <div class="panel"><div id="allRequests" class="empty-state">Ainda não enviou nenhuma solicitação.</div></div>
+      </section>
+
+      <section class="page" id="page-pagamentos">
+        <div class="page-intro"><span class="eyebrow">ÁREA FINANCEIRA</span><h2>Pagamentos</h2><p>Registe um pagamento e consulte os comprovativos que enviou.</p></div>
+        <div class="panel payment-panel"><h3>Enviar comprovativo</h3><form id="paymentForm" class="form-grid"><label>Serviço relacionado<select id="paymentService" required><option value="">Selecione uma solicitação</option></select></label><label>Valor pago (Kz)<input id="paymentAmount" type="number" min="1" placeholder="Ex.: 15000" required></label><label class="full">Referência ou observação<input id="paymentNote" type="text" placeholder="Ex.: primeira prestação"></label><label class="full">Comprovativo (opcional)<input id="paymentFile" type="file" accept="image/*,.pdf"></label><div class="full"><button class="btn btn-gold" type="submit">Registar pagamento</button><p class="form-hint">Demonstração: o registo fica guardado neste navegador. Não é enviado para a empresa.</p></div></form></div>
+        <div class="section-heading"><div><span class="eyebrow">REGISTOS</span><h2>Histórico de pagamentos</h2></div></div><div class="panel"><div id="paymentHistory" class="empty-state">Ainda não existem pagamentos registados.</div></div>
+      </section>
+
+      <section class="page" id="page-perfil">
+        <div class="page-intro"><span class="eyebrow">DADOS PESSOAIS</span><h2>Meu perfil</h2><p>Consulte e atualize os dados da sua conta.</p></div>
+        <div class="panel profile-panel"><form id="profileForm" class="form-grid"><label>Nome completo<input id="profileName" required></label><label>Telefone<input id="profilePhone" required></label><label>E-mail<input id="profileEmail" type="email" required></label><label>Município<input id="profileMunicipality"></label><label class="full">Endereço<input id="profileAddress"></label><div class="full"><button class="btn btn-gold" type="submit">Guardar alterações</button></div></form></div>
+      </section>
+
+      <footer class="footer"><span>© <span id="year"></span> HORIZONT FASHION</span><span>Excelência em cada serviço.</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="authModal">
+    <div class="modal auth-modal"><div class="modal-brand"><img src="assets/Horizont.jpg" alt="HORIZONT FASHION"></div><span class="eyebrow">BEM-VINDO À HORIZONT FASHION</span><h2 id="authTitle">Aceda à sua conta</h2><p id="authDescription">Entre para acompanhar os seus serviços e solicitações.</p>
+      <div class="auth-tabs"><button class="selected" id="loginTab">Entrar</button><button id="registerTab">Criar conta</button></div>
+      <form id="authForm"><label id="nameWrap" class="hidden">Nome completo<input id="authName" autocomplete="name"></label><label>E-mail<input id="authEmail" type="email" autocomplete="email" required></label><label>Palavra-passe<input id="authPassword" type="password" minlength="4" autocomplete="current-password" required></label><div id="authError" class="error-msg"></div><button class="btn btn-gold full-btn" id="authSubmit" type="submit">Entrar na minha conta</button></form>
+      <small class="demo-note">Versão inicial de demonstração — os dados ficam guardados apenas neste navegador.</small>
+    </div>
+  </div>
+
+  <div class="modal-backdrop hidden" id="requestModal"><div class="modal request-modal"><button class="close-modal" id="closeRequest">×</button><span class="eyebrow">NOVO PEDIDO</span><h2>Solicitar serviço</h2><p>Preencha os dados para a nossa equipa analisar o seu pedido.</p><form id="requestForm" class="form-grid"><label class="full">Serviço<select id="requestService" required><option value="">Selecione</option><option>Trabalho de Fim de Curso</option><option>Criação de protótipo funcional</option><option>Preparatório para defesa</option><option>Serviços gráficos</option></select></label><label class="full">Título ou assunto<input id="requestTitle" required placeholder="Ex.: Protótipo de sistema de gestão"></label><label class="full">Descrição<textarea id="requestDescription" rows="4" required placeholder="Explique o que pretende..."></textarea></label><label>Prazo pretendido<input id="requestDeadline" type="date"></label><label>Anexo (opcional)<input id="requestFile" type="file"></label><div class="full"><button class="btn btn-gold" type="submit">Enviar solicitação</button></div></form></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
 </body>
 </html>
