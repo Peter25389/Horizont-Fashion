@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HORIZONT FASHION — Plataforma de atendimento e gestão de solicitações de serviços.">
+  <title>HORIZONT FASHION | Área do Cliente</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-page="inicio">
+        <img src="assets/Horizont.jpg" alt="Logótipo HORIZONT FASHION">
+        <span>HORIZONT <small>FASHION</small></span>
+      </a>
+      <div class="side-label">ÁREA DO CLIENTE</div>
+      <nav class="nav-menu">
+        <button class="nav-link active" data-page="inicio"><span>⌂</span> Início</button>
+        <button class="nav-link" data-page="solicitacoes"><span>▤</span> Minhas solicitações</button>
+        <button class="nav-link" data-page="servicos"><span>✦</span> Serviços</button>
+        <button class="nav-link" data-page="pagamentos"><span>▣</span> Pagamentos</button>
+        <button class="nav-link" data-page="perfil"><span>♙</span> Meu perfil</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><strong>Precisa de ajuda?</strong><p>Entre em contacto com a nossa equipa.</p><a href="mailto:contacto@horizontfashion.ao">Contactar →</a></div>
+        <button class="logout" id="logoutBtn">↪ Terminar sessão</button>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuBtn" aria-label="Abrir menu">☰</button>
+        <div><span class="eyebrow">PLATAFORMA DE ATENDIMENTO</span><h1 id="pageTitle">Bem-vindo à HORIZONT FASHION</h1></div>
+        <div class="top-user"><div class="avatar" id="userInitials">CL</div><div><strong id="topUserName">Cliente</strong><small>Área do cliente</small></div></div>
+      </header>
+
+      <section class="page active" id="page-inicio">
+        <div class="hero">
+          <div class="hero-copy"><span class="gold-tag">EXCELÊNCIA • CRIATIVIDADE • INOVAÇÃO</span><h2>As suas ideias,<br><em>o nosso compromisso.</em></h2><p>Solicite serviços, acompanhe o andamento dos seus trabalhos e consulte os seus pagamentos num só lugar.</p><button class="btn btn-gold" data-goto="servicos">Explorar serviços <b>→</b></button></div>
+          <div class="hero-mark"><img src="assets/Horizont.jpg" alt="HORIZONT FASHION"></div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">RESUMO DA CONTA</span><h2>Visão geral</h2></div><span class="today" id="todayLabel"></span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon">▤</span><small>Total de solicitações</small><strong id="statRequests">0</strong><span class="stat-note">Pedidos registados</span></article>
+          <article class="stat-card"><span class="stat-icon">◷</span><small>Em andamento</small><strong id="statActive">0</strong><span class="stat-note">A serem acompanhados</span></article>
+          <article class="stat-card"><span class="stat-icon">✓</span><small>Concluídas</small><strong id="statDone">0</strong><span class="stat-note">Trabalhos finalizados</span></article>
+          <article class="stat-card"><span class="stat-icon">▣</span><small>Pagamentos registados</small><strong id="statPayments">0</strong><span class="stat-note">Comprovativos enviados</span></article>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow">ACOMPANHAMENTO</span><h2>Solicitações recentes</h2></div><button class="text-btn" data-goto="solicitacoes">Ver todas →</button></div>
+        <div class="panel"><div id="recentRequests" class="empty-state">Ainda não existem solicitações. Explore os nossos serviços para começar.</div></div>
+      </section>
+
+      <section class="page" id="page-servicos">
+        <div class="page-intro"><span class="eyebrow">O QUE FAZEMOS</span><h2>Os nossos serviços</h2><p>Escolha o serviço de que precisa e envie a sua solicitação à nossa equipa.</p></div>
+        <div class="services-grid">
+          <article class="service-card"><div class="service-symbol">TFC</div><span class="service-kicker">ACOMPANHAMENTO ACADÉMICO</span><h3>Trabalho de Fim de Curso</h3><p>Apoio na organização, estruturação e desenvolvimento do seu projeto académico.</p><button class="btn btn-outline request-service" data-service="Trabalho de Fim de Curso">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">⌘</div><span class="service-kicker">TECNOLOGIA</span><h3>Protótipos funcionais</h3><p>Criação de protótipos de websites, sistemas e aplicações para demonstrar as suas ideias.</p><button class="btn btn-outline request-service" data-service="Criação de protótipo funcional">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">▧</div><span class="service-kicker">PREPARAÇÃO</span><h3>Preparatório para defesa</h3><p>Preparação de apresentações, materiais de apoio e organização para a defesa.</p><button class="btn btn-outline request-service" data-service="Preparatório para defesa">Solicitar serviço <b>→</b></button></article>
+          <article class="service-card"><div class="service-symbol">✧</div><span class="service-kicker">DESIGN E COMUNICAÇÃO</span><h3>Serviços gráficos</h3><p>Criação de logótipos, cartazes, convites e outros materiais gráficos.</p><button class="btn btn-outline request-service" data-service="Serviços gráficos">Solicitar serviço <b>→</b></button></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-solicitacoes">
+        <div class="page-intro row-intro"><div><span class="eyebrow">OS SEUS PEDIDOS</span><h2>Minhas solicitações</h2><p>Consulte os pedidos que enviou à HORIZONT FASHION.</p></div><button class="btn btn-gold" data-goto="servicos">+ Nova solicitação</button></div>
+        <div class="panel"><div id="allRequests" class="empty-state">Ainda não enviou nenhuma solicitação.</div></div>
+      </section>
+
+      <section class="page" id="page-pagamentos">
+        <div class="page-intro"><span class="eyebrow">ÁREA FINANCEIRA</span><h2>Pagamentos</h2><p>Registe um pagamento e consulte os comprovativos que enviou.</p></div>
+        <div class="panel payment-panel"><h3>Enviar comprovativo</h3><form id="paymentForm" class="form-grid"><label>Serviço relacionado<select id="paymentService" required><option value="">Selecione uma solicitação</option></select></label><label>Valor pago (Kz)<input id="paymentAmount" type="number" min="1" placeholder="Ex.: 15000" required></label><label class="full">Referência ou observação<input id="paymentNote" type="text" placeholder="Ex.: primeira prestação"></label><label class="full">Comprovativo (opcional)<input id="paymentFile" type="file" accept="image/*,.pdf"></label><div class="full"><button class="btn btn-gold" type="submit">Registar pagamento</button><p class="form-hint">Demonstração: o registo fica guardado neste navegador. Não é enviado para a empresa.</p></div></form></div>
+        <div class="section-heading"><div><span class="eyebrow">REGISTOS</span><h2>Histórico de pagamentos</h2></div></div><div class="panel"><div id="paymentHistory" class="empty-state">Ainda não existem pagamentos registados.</div></div>
+      </section>
+
+      <section class="page" id="page-perfil">
+        <div class="page-intro"><span class="eyebrow">DADOS PESSOAIS</span><h2>Meu perfil</h2><p>Consulte e atualize os dados da sua conta.</p></div>
+        <div class="panel profile-panel"><form id="profileForm" class="form-grid"><label>Nome completo<input id="profileName" required></label><label>Telefone<input id="profilePhone" required></label><label>E-mail<input id="profileEmail" type="email" required></label><label>Município<input id="profileMunicipality"></label><label class="full">Endereço<input id="profileAddress"></label><div class="full"><button class="btn btn-gold" type="submit">Guardar alterações</button></div></form></div>
+      </section>
+
+      <footer class="footer"><span>© <span id="year"></span> HORIZONT FASHION</span><span>Excelência em cada serviço.</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="authModal">
+    <div class="modal auth-modal"><div class="modal-brand"><img src="assets/Horizont.jpg" alt="HORIZONT FASHION"></div><span class="eyebrow">BEM-VINDO À HORIZONT FASHION</span><h2 id="authTitle">Aceda à sua conta</h2><p id="authDescription">Entre para acompanhar os seus serviços e solicitações.</p>
+      <div class="auth-tabs"><button class="selected" id="loginTab">Entrar</button><button id="registerTab">Criar conta</button></div>
+      <form id="authForm"><label id="nameWrap" class="hidden">Nome completo<input id="authName" autocomplete="name"></label><label>E-mail<input id="authEmail" type="email" autocomplete="email" required></label><label>Palavra-passe<input id="authPassword" type="password" minlength="4" autocomplete="current-password" required></label><div id="authError" class="error-msg"></div><button class="btn btn-gold full-btn" id="authSubmit" type="submit">Entrar na minha conta</button></form>
+      <small class="demo-note">Versão inicial de demonstração — os dados ficam guardados apenas neste navegador.</small>
+    </div>
+  </div>
+
+  <div class="modal-backdrop hidden" id="requestModal"><div class="modal request-modal"><button class="close-modal" id="closeRequest">×</button><span class="eyebrow">NOVO PEDIDO</span><h2>Solicitar serviço</h2><p>Preencha os dados para a nossa equipa analisar o seu pedido.</p><form id="requestForm" class="form-grid"><label class="full">Serviço<select id="requestService" required><option value="">Selecione</option><option>Trabalho de Fim de Curso</option><option>Criação de protótipo funcional</option><option>Preparatório para defesa</option><option>Serviços gráficos</option></select></label><label class="full">Título ou assunto<input id="requestTitle" required placeholder="Ex.: Protótipo de sistema de gestão"></label><label class="full">Descrição<textarea id="requestDescription" rows="4" required placeholder="Explique o que pretende..."></textarea></label><label>Prazo pretendido<input id="requestDeadline" type="date"></label><label>Anexo (opcional)<input id="requestFile" type="file"></label><div class="full"><button class="btn btn-gold" type="submit">Enviar solicitação</button></div></form></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
